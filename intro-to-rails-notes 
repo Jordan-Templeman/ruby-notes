@@ -39,7 +39,7 @@ start rails app
   --> rails db:migrate
   --> undo migration rails db:rollback 
   --> add_column article_name :whats_it_doing, :datetime
-   this is a change 
+   
 
 
   
