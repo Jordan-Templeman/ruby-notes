@@ -1,0 +1,30 @@
+--   CREATE NEW ARTICLE --
+      -->  Article.create(title: "first article", description: "Description of first article") # make sure Article is capitalized if using this method
+      -->  article = Article.new
+      -->  article.title = "second article"
+      -->  article.description = "description of second article"
+      -->  article.save
+      -->  article = Article.new(title: "third article", description: "description of third article")
+      -->  article.save
+      --> Article.all -- to see everything added in to the Article -- 
+          --- create variables for article you want to call on it later--
+          -->  article = Article.find(1)
+          -->  article.title # to display (get) the title
+          -->  article.description # to display (get) the description
+
+
+          -- READ THE ARTICLE --
+          article = Article.find(id of article you want to edit)
+          Article.all 'to view everyting in the article'
+          Article.find('id of article you are searching for')
+
+
+          --- Update the Article --- 
+         -->   article.title = "new title"
+         -->   article.description = "new description"
+         -->   article.save
+
+         --- DESTROY THE ARTICLE --
+          -->  article = Article.find(id of article you want to delete)
+          -->  article.destroy
+

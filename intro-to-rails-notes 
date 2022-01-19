@@ -1,0 +1,50 @@
+Conventional Expectations 
+    -> define root that points to a controller#action
+    -> have appropriate named controller 
+    -> have appropriate named action/method
+    -> if done under views rails expects a pages folder 
+
+Generate new conroler from command line
+    -> rails genrate controler -controllerName-
+
+start rails app 
+ --> rails new ~/directory/app-name
+ --> rails s starts server 
+ --> yarn start
+
+ deploy to heroku 
+  --> heroku login
+  --> heroku create 
+  --> git push heroku main 
+
+  Database 
+  --> has many tables
+  ---> collumns
+    --> id 
+    --> title
+    --> description
+    --> user_id
+    -- CRUD --
+    -- Create article 
+    -- Read article 
+    -- Update article 
+    -- Delete artilce 
+    -- CRUD --
+    --> ORM object relational mapper 
+        --> ActiveRecord <--
+--> create article 
+  --> rails generate Article scaffold title:string description:text 
+  --> rails routes --expanded 'shows all routes'
+  --> rails g migration create_articles
+  --> rails db:migrate
+  --> undo migration rails db:rollback 
+  --> add_column article_name :whats_it_doing, :datetime
+
+  
+
+  
+
+  
+
+
+
